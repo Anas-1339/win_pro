@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(247, 164, 164);
+}
+
+#countdown {
+    color: #fcc5c5;
+    padding: 10px;
+}
+
+/* الحاوية الرئيسية الشاملة لتعتم الشاشة */
+.loader-con {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none; /* مخفي بشكل افتراضي */
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* توسيط المحتوى داخل البطاقات نافذة الـ Modal */
+.card-body, .modal-body {
+    text-align: center !important;
+}
+
+/* توسيط حاوية البطاقات نفسها في منتصف الصفحة */
+#cards {
+    display: none;
+    justify-content: center;
+}
